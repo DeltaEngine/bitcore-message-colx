@@ -1,29 +1,24 @@
-# Dash Message Verification and Signing for Bitcore-Dash
+# Colx Message Verification and Signing for Bitcore-Colx
 
+bitcore-message-colx adds support for verifying and signing colx messages in [Node.js](http://nodejs.org/) and web browsers.
 
-[![NPM Package](https://img.shields.io/npm/v/bitcore-message-dash.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-message-dash)
-[![Build Status](https://img.shields.io/travis/dashpay/bitcore-message-dash.svg?branch=master&style=flat-square)](https://travis-ci.org/dashpay/bitcore-message-dash)
-[![Coverage Status](https://img.shields.io/coveralls/bitpay/bitcore-message-dash.svg?style=flat-square)](https://coveralls.io/r/dashpay/bitcore-message-dash?branch=master)
-
-bitcore-message-dash adds support for verifying and signing dash messages in [Node.js](http://nodejs.org/) and web browsers.
-
-See [the main bitcore-dash repo](https://github.com/dashpay/bitcore-dash) for more information.
+See [the main bitcore-colx repo](https://github.com/deltaengine/bitcore-colx) for more information.
 
 ## Getting Started
 
 ```sh
-npm install bitcore-message-dash
+npm install bitcore-message-colx
 ```
 
 ```sh
-bower install bitcore-message-dash
+bower install bitcore-message-colx
 ```
 
 To sign a message:
 
 ```javascript
-var bitcore = require('bitcore-lib-dash');
-var Message = require('bitcore-message-dash');
+var bitcore = require('bitcore-lib-colx');
+var Message = require('bitcore-message-colx');
 
 var privateKey = bitcore.PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
 var signature = Message('hello, world').sign(privateKey);
@@ -39,7 +34,7 @@ var verified = Message('hello, world').verify(address, signature);
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/dashpay/bitcore-dash/blob/master/CONTRIBUTING.md) on the main bitcore-dash repo for information about how to contribute.
+See [CONTRIBUTING.md](https://github.com/deltaengine/bitcore-colx/blob/master/CONTRIBUTING.md) on the main bitcore-colx repo for information about how to contribute.
 
 ## License
 
