@@ -17,7 +17,7 @@ bower install bitcore-message-colx
 To sign a message:
 
 ```javascript
-var bitcore = require('bitcore-lib-colx');
+var bitcore = require('colossuscore-lib');
 var Message = require('bitcore-message-colx');
 
 var privateKey = bitcore.PrivateKey.fromWIF('cPBn5A4ikZvBTQ8D7NnvHZYCAxzDZ5Z2TSGW2LkyPiLxqYaJPBW4');
